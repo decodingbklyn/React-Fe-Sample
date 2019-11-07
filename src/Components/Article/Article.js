@@ -7,7 +7,7 @@ function Article(props){
             <Card className="article">
                 <CardActionArea className="article--img">
                     <CardMedia 
-                        image={ require(`${props.img}`) }
+                        image={ require( props.img ) }
                         title={ props.title }
                         height={ props.imgHeight }
                         component="img"
