@@ -1,38 +1,50 @@
 [
     {
+        "id": "1",
         "title": "Bureaux exquisite delightful carefully curated soft power.", 
         "date": "FEBRUARY 10 2017",
         "author":  "Lorem Ipsum",
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img1.png",
+        "height": "348"
     },
     {
+        "id": "2",
         "title": "Sharp bureaux sleepy K-pop carefully curated.", 
         "date": "FEBRUARY 2 2017",
         "author":  "Lorem Ipsum",
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img2.png",
+        "height": "524"
     },
     {
+        "id": "3",
         "title": "St Moritz uniforms Beams.", 
         "date": "JANUARY 27 2017",
         "author": "Lorem Ipsum",
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img3.png",
+        "height": "233"
     },
     {
+        "id": "4",
         "title": "Esse airport veniam ryokan soft power.", 
         "date": "JANUARY 21 2017",
         "author": "Lorem Ipsum",
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img4.png",
+        "height": "348"
     },
     {
+        "id": "5",
         "title": "K-pop extraordinary.", 
         "date": "JANUARY 18 2017",
         "author": "Lorem Ipsum",
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img5.png",
+        "height": "524"
     },    
     {
+        "id": "6",
         "title": "Artisanal iconic cutting-edge business class.", 
         "date": "JANUARY 12 2017",
         "author": "Lorem Ipsum", 
-        "img": "https://via.placeholder.com/250"
+        "img": "../../Utils/imgs/img6.png",
+        "height": "233"
     }
 ]

@@ -37,6 +37,7 @@ function Carousel(){
         width: '100vw',
         height: '100%', 
         background: '#fff',
+        marginBottom: '50px'
     }
 
     let itemStyle = {
@@ -45,17 +46,30 @@ function Carousel(){
         margin: '0 0px', 
         padding: 0
     }
+
+    let accEle = {
+        button: false, 
+        dots: true
+    }
+
+    let dotsSetting = {
+        placeOn: 'bottom',
+        style: {
+            dotSize: "5px",
+            currDotColor: "rgba(155, 108, 27, 0.5)",
+            marginBottom: "20px"
+        }
+    }
+    
     
     return (
-        <div className="carousel">
-            <CarouselSlider slideItems = {data}
-                            className = 'carousel--container' 
-                            accEle = {{button: false}}
-                            manner = {manner}
+            <CarouselSlider slideItems = { data }
+                            accEle = { accEle }
+                            manner = { manner }
                             sliderBoxStyle = { sliderBox }
                             itemsStyle = { itemStyle }
+                            dotsSetting = { dotsSetting }
                             />
-        </div>
     )
 }
 

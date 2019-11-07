@@ -1,12 +1,17 @@
 import React from 'react'
-import '../App.css'
+import Masonry from 'react-masonry-css'
 import Header from './Header/Header'
 import Carousel from './Carousel/Carousel'
 import Article from './Article/Article'
 import articleData from './../Utils/data/data.json'
 
 function App() {
-
+  const breakpointColumnsObj = {
+    default: 3,
+    1100: 2,
+    700: 2,
+    500: 1
+  };
 
   return (
     <div className="app">
@@ -17,16 +22,23 @@ function App() {
         <Carousel />
       </section>
       <main className="app--articles">
-        <div>
+        <Masonry breakpointCols={ breakpointColumnsObj }
+                  className="my-masonry-grid"
+                  columnClassName="my-masonry-grid_column"
+                  >
           {
-            articleData.map( data => <Article 
-                                        img={data.img}
-                                        date={data.date}
-                                        title={data.title}
-                                        author={data.author}
+            articleData.map(( data )=> <Article 
+                                        className="my-masonry-grid_column"
+                                        key={ data.id }
+                                        articleId= { data.id }
+                                        imgHeight={ data.height }
+                                        img={ data.img }
+                                        date={ data.date }
+                                        title={ data.title }
+                                        author={ data.author }
                                     />)
           }
-        </div>
+        </Masonry>
       </main>
       <footer className="app--footer">
           © 2017 — SPARTA PLAESENT - instagram - facebook - twitter

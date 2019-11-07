@@ -2,22 +2,24 @@ import React from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
 
 function Article(props){
+
     return(
-        <div>
-            <Card>
-                <CardActionArea>
+            <Card className="article">
+                <CardActionArea className="article--img">
                     <CardMedia 
-                        image={props.img}
-                        title={props.title}
+                        image={ require(`${props.img}`) }
+                        title={ props.title }
+                        height={ props.imgHeight }
+                        component="img"
                     />
-                    <CardContent>
-                        <Typography>{props.date}</Typography>
-                        <Typography>{props.title}</Typography>
-                        <Typography>{props.author}</Typography>
+                    {console.log(Number.parseInt(props.articleId))}
+                    <CardContent className="article--descr">
+                        <Typography>{ props.date }</Typography>
+                        <Typography>{ props.title }</Typography>
+                        <Typography>{ props.author }</Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>
-        </div>
     )
 }
 
