@@ -1,37 +1,31 @@
 .app {
-  position: relative;
-}
-.app--header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-  background-color: #fff;
-}
-.app--jumbotron {
-  position: relative;
-  padding-top: 120px;
-}
+  position: relative; }
+  .app--header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: #fff; }
+  .app--jumbotron {
+    position: relative;
+    padding-top: 120px; }
 
 .my-masonry-grid {
   display: flex !important;
   margin-left: -30px;
   /* gutter size offset */
-  width: auto;
-}
+  width: auto; }
 
 .my-masonry-grid_column {
   padding-left: 30px;
   /* gutter size */
-  background-clip: padding-box;
-}
+  background-clip: padding-box; }
 
 /* Style your items */
 .my-masonry-grid_column > div {
   /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
-}
+  background: #fff;
+  margin-bottom: 30px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,94 +46,92 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-.carousel--container {
+.carousel-data {
   max-width: 1440px;
-  max-height: 580px;
-  min-width: 100vw;
-  height: 100vh;
-}
+  width: 100vw;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 !important; }
+  .carousel-data--img {
+    display: block;
+    height: 100% !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    object-fit: fill !important; }
+  .carousel-data--headline {
+    font-size: 60px;
+    top: 50%; }
+  .carousel-data--date {
+    font-size: 30px;
+    top: 55%; }
+  .carousel-data--descr {
+    font-size: 18px;
+    top: 60%; }
 .carousel .rcs_slideCon {
-  height: 100% !important;
-}
+  height: 100% !important; }
 .carousel .itemWrapper img {
-  width: 100vw !important;
-}
+  width: 100vw !important; }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 120px 40px;
-}
-.header--logo {
-  max-width: 75vw;
-  width: 100%;
-}
-.header--logo svg {
-  max-width: 196px;
-  max-height: 34px;
-  width: 100%;
-  height: 100%;
-}
-.header--menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.header .menu .menu--input {
-  flex: 0 1 auto;
-  margin-right: 20px;
-  color: #767676;
-  font-family: Arial;
-  font-weight: bold;
-}
-.header .menu .menu--drpdwn {
-  flex: 0 1 auto;
-  max-width: 25vw;
-  width: 100%;
-}
-.header .menu .menu--drpdwn svg {
-  max-width: 55px;
-  max-height: 13px;
-  width: 100%;
-  height: 100%;
-}
-.header .menu .menu--drpdwn svg path {
-  color: #000000;
-}
+  padding: 50px 120px 40px; }
+  .header--logo {
+    max-width: 75vw;
+    width: 100%; }
+    .header--logo svg {
+      max-width: 196px;
+      max-height: 34px;
+      width: 100%;
+      height: 100%; }
+  .header--menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+  .header .menu .menu--input {
+    flex: 0 1 auto;
+    margin-right: 20px;
+    color: #767676;
+    font-family: Arial;
+    font-weight: bold; }
+  .header .menu .menu--drpdwn {
+    flex: 0 1 auto;
+    max-width: 25vw;
+    width: 100%; }
+    .header .menu .menu--drpdwn svg {
+      max-width: 55px;
+      max-height: 13px;
+      width: 100%;
+      height: 100%; }
+      .header .menu .menu--drpdwn svg path {
+        color: #000000; }
 
 /*# sourceMappingURL=index.css.map */

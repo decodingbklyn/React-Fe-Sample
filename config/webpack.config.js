@@ -509,8 +509,22 @@ module.exports = function(webpackEnv) {
               exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
               options: {
                 name: 'static/media/[name].[hash:8].[ext]',
+                rules: [{
+                  test: /\.(gif|png|jpe?g|svg)$/i,
+                  use: [
+                    'file-loader',
+                    {
+                      loader: 'image-webpack-loader',
+                      options: {
+                        bypassOnDebug: true, // webpack@1.x
+                        disable: true, // webpack@2.x and newer
+                      },
+                    },
+                  ],
+                }],
               },
-            },
+              },
+
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],
