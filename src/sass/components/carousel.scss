@@ -1,0 +1,15 @@
+.carousel {
+    &--container {
+        max-width: 1440px;
+        max-height: 580px;
+        min-width: 100vw;
+        height: 100vh;
+    }
+    .rcs_slideCon {
+        height: 100% !important;
+    }
+    
+    .itemWrapper img {
+        width: 100vw !important;
+    }
+}

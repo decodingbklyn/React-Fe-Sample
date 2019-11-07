@@ -1,0 +1,15 @@
+.app{
+    position: relative;
+
+    &--header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+        background-color: #fff;
+    }
+    &--jumbotron {
+        position: relative;
+        padding-top: 120px;
+    }
+}
