@@ -1,4 +1,4 @@
-.app{
+.app {
     position: relative;
 
     &--header {
@@ -14,20 +14,36 @@
     }
 }
 
+/* fonts */
+@font-face {
+	font-family: Springville;
+	src: url("../../fonts/Springville-Regular3.otf") format("otf");
+}
+
+@font-face {
+	font-family: ACaslsonPro;
+	src: url("../../fonts/ACaslonPro-Regular.otf") format("otf");
+}
+
+/* App Article Grids */
 .my-masonry-grid {
     display: flex !important;
-    margin-left: -30px; /* gutter size offset */
+    max-width: 1440px;
+    margin: 0 auto;
     width: auto;
-  }
+    align-items: flex-start;
 
-.my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-  }
-  
-  /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-    background: #fff;
-    margin-bottom: 30px;
-    margin: auto;
+    &_column {
+		padding-left: 30px;
+		background-clip: padding-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: baseline;
+    }
+
+    &_column > div { 
+		background: #fff;
+		margin-bottom: 30px;
+		margin: 0 auto 50px;
+    }
   }

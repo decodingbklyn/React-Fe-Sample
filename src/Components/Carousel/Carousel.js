@@ -1,6 +1,6 @@
 import React from 'react'
 import CarouselSlider from 'react-carousel-slider';
-import hero from '../../Utils/imgs/hero (2).png'
+import hero from '../../Utils/images/hero (2).png'
 
 
 function Carousel(){
@@ -71,7 +71,7 @@ function Carousel(){
     }
     let articleDes = data.map( (item , index) => 
         <div className="carousel-data">
-            <img className="carousel-data--img" src = {item.imgSrc} alt= { item.headline } />
+            <img className="carousel-data--img" src = { item.imgSrc} alt= { item.headline } />
             <p className="carousel-data--label">Screening:</p>
             <p className="carousel-data--headline">{item.headline }</p>
             <p className="carousel-data--date">{ item.date }</p>

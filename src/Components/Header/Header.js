@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReactComponent as Logo } from '../../Utils/imgs/logo.svg';
-import { ReactComponent as Menu } from '../../Utils/imgs/hamburger.svg';
+import { ReactComponent as Logo } from '../../Utils/images/logo.svg';
+import { ReactComponent as Menu } from '../../Utils/images/hamburger.svg';
 
 function Header(){
 

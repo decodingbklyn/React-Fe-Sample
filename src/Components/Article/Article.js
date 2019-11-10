@@ -6,17 +6,17 @@ function Article(props){
     return(
             <Card className="article">
                 <CardActionArea className="article--img">
+                {console.log(props.img)}
                     <CardMedia 
-                        image={ require(props.img)  }
+                        image={ props.img  }     
                         title={ props.title }
                         height={ props.imgHeight }
                         component="img"
                     />
-                    {console.log(Number.parseInt(props.articleId))}
                     <CardContent className="article--descr">
-                        <Typography>{ props.date }</Typography>
-                        <Typography>{ props.title }</Typography>
-                        <Typography>{ props.author }</Typography>
+                        <Typography className="article--date">{ props.date }</Typography>
+                        <Typography className="article--title">{ props.title }</Typography>
+                        <Typography className="article--author">Presented by { props.author }</Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>
