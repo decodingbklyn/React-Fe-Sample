@@ -1,6 +1,7 @@
 {
   "name": "react-fe-sample",
   "version": "0.1.0",
+  "homepage": "https://vast-reef-10025.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
