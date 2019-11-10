@@ -7,19 +7,19 @@ function Carousel(){
 
     let data = [
         {
-            headline: "Screening:\n DVF Secret Agent Part 1",
+            headline: "DVF Secret Agent Part 1",
             date: "October 15, 2017",
             des: "Join us for a private screening of DVF Secret Agent Part 1 with our special guest, director Peter Lindberg",
             imgSrc: hero
         },
         {
-            headline: "Screening:\n DVF Secret Agent Part 2",
+            headline: "DVF Secret Agent Part 2",
             date: "October 15, 2017",
             des: "Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director Peter Lindberg",
             imgSrc: hero
         },
         {
-            headline: "Screening:\n DVF Secret Agent Part 3",
+            headline: "DVF Secret Agent Part 3",
             date: "October 15, 2017",
             des: "Join us for a private screening of DVF Secret Agent Part 3 with our special guest, director Peter Lindberg",
             imgSrc: hero
@@ -72,6 +72,7 @@ function Carousel(){
     let articleDes = data.map( (item , index) => 
         <div className="carousel-data">
             <img className="carousel-data--img" src = {item.imgSrc} alt= { item.headline } />
+            <p className="carousel-data--label">Screening:</p>
             <p className="carousel-data--headline">{item.headline }</p>
             <p className="carousel-data--date">{ item.date }</p>
             <p className="carousel-data--descr">{ item.des}</p>
