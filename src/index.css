@@ -106,18 +106,15 @@ table {
     line-height: 48px !important;
     letter-spacing: -1.8px !important;
     word-spacing: 9px !important;
-    padding-bottom: 35px !important;
-    cursor: grab; }
+    padding-bottom: 35px !important; }
     .article--title:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: grab; }
   .article--author {
     font-family: "ACaslsonPro" !important;
     font-size: 14px !important; }
   .article--articles {
     margin: 0 auto; }
-
-button:hover {
-  background-color: "transparent" !important; }
 
 .carousel-data {
   max-width: 1440px;

@@ -9,7 +9,6 @@
     &--descr{
         padding: 0px !important;
         background-color: #fff !important;
-
     }
 
     &--date {
@@ -26,10 +25,10 @@
         letter-spacing: -1.8px !important;
         word-spacing: 9px !important;
         padding-bottom: 35px !important;
-        cursor: grab;
 
         &:hover {
             text-decoration: underline;
+            cursor: grab;
         }
     }
 
@@ -42,9 +41,3 @@
         margin: 0 auto;
     }
 }
-
-button{
-    &:hover{
-      background-color: "transparent" !important;
-    }
-  }  

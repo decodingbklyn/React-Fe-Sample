@@ -5,15 +5,16 @@ function Article(props){
 
     return(
             <Card className="article" disableRipple>
-                <CardActionArea className="article--img" disabled disableRipple>
+                <CardActionArea className="article--img" disabled>
                     <CardMedia 
                         image={ props.img  }     
                         title={ props.title }
                         height={ props.imgHeight }
                         component="img"
-                        disableRipple
                     />
-                    <CardContent className="article--descr" disableRipple>
+                </CardActionArea>
+                <CardActionArea>
+                    <CardContent className="article--descr">
                         <Typography className="article--date">{ props.date }</Typography>
                         <Typography className="article--title">{ props.title }</Typography>
                         <Typography className="article--author">Presented by { props.author }</Typography>

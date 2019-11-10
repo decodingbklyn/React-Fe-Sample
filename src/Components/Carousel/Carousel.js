@@ -46,7 +46,7 @@ function Carousel(){
         minWidth: '320px',
         height: '100%',
         margin: '0 5px', 
-        padding: 0,
+        padding: "0",
     }
 
     let buttonSetting = {
@@ -61,7 +61,7 @@ function Carousel(){
             
     }
     let dotsSetting = {
-        placeOn: 'bottom-beneath',
+        placeOn: 'beneath',
         style: {
             dotSize: "10x",
             marginBottom: "20px",
