@@ -1,49 +1,61 @@
 .app {
-    position: relative;
+	position: relative;
+	max-width: 1440px;
+	margin: auto;
 
     &--header {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 200;
-        background-color: #fff;
-    }
+		background-color: #fff;
+		max-width: 1440px;
+	}
+	
     &--jumbotron {
         position: relative;
         padding-top: 120px;
     }
 }
 
-/* fonts */
-@font-face {
-	font-family: Springville;
-	src: url("../../fonts/Springville-Regular3.otf") format("otf");
-}
-
-@font-face {
-	font-family: ACaslsonPro;
-	src: url("../../fonts/ACaslonPro-Regular.otf") format("otf");
+@media screen and (max-width: 575px) {
+	.app {
+		&--jumbotron {
+			padding-top: 50px;
+		}
+	}
 }
 
 /* App Article Grids */
 .my-masonry-grid {
-    display: flex !important;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: auto;
-    align-items: flex-start;
+	display: flex !important;
+	max-width: 1440px;
+	margin: 0 auto;
+	width: auto;
+	align-items: flex-start;
 
-    &_column {
-		padding-left: 30px;
+	&_column {
 		background-clip: padding-box;
 		display: flex;
 		flex-direction: column;
 		justify-content: baseline;
-    }
+	}
 
-    &_column > div { 
+	&_column > div { 
 		background: #fff;
 		margin-bottom: 30px;
 		margin: 0 auto 50px;
-    }
-  }
+		box-shadow: 0 !important;
+	}
+}
+
+  /* fonts */
+@font-face {
+	font-family: Springville;
+	src: url("./fonts/Springville-Regular3.otf") format("otf");
+}
+  
+@font-face {
+	font-family: ACaslsonPro;
+	src: url("./fonts/ACaslonPro-Regular.otf") format("otf");
+}

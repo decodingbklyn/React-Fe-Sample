@@ -10,8 +10,8 @@ function Header(){
                 <Logo />
             </div>
             <div className="menu header--menu">
-                <div className="menu--input">212.555.5555</div>
-                <div className="menu--input">Login</div>
+                <a className="menu--input" href="tel:2125555555">2125555555</a>
+                <a className="menu--input" href="#">Login</a>
                 <div className="menu--drpdwn">
                     <Menu />
                 </div>

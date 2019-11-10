@@ -1,19 +1,21 @@
 .app {
-  position: relative; }
+  position: relative;
+  max-width: 1440px;
+  margin: auto; }
   .app--header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 200;
-    background-color: #fff; }
+    background-color: #fff;
+    max-width: 1440px; }
   .app--jumbotron {
     position: relative;
     padding-top: 120px; }
 
-/* fonts */
-@font-face {
-  font-family: Springville;
-  src: url("../../fonts/Springville-Regular3.otf") format("otf"); }
+@media screen and (max-width: 575px) {
+  .app--jumbotron {
+    padding-top: 50px; } }
 /* App Article Grids */
 .my-masonry-grid {
   display: flex !important;
@@ -22,7 +24,6 @@
   width: auto;
   align-items: flex-start; }
   .my-masonry-grid_column {
-    padding-left: 30px;
     background-clip: padding-box;
     display: flex;
     flex-direction: column;
@@ -30,8 +31,16 @@
   .my-masonry-grid_column > div {
     background: #fff;
     margin-bottom: 30px;
-    margin: 0 auto 50px; }
+    margin: 0 auto 50px;
+    box-shadow: 0 !important; }
 
+/* fonts */
+@font-face {
+  font-family: Springville;
+  src: url("./fonts/Springville-Regular3.otf") format("otf"); }
+@font-face {
+  font-family: ACaslsonPro;
+  src: url("./fonts/ACaslonPro-Regular.otf") format("otf"); }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,62 +86,124 @@ table {
   border-spacing: 0; }
 
 .article {
-  max-width: 350px; }
+  max-width: 350px;
+  border-radius: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+  padding-bottom: 50px !important;
+  border-bottom: solid 1px #DBDBDB !important;
+  background-color: #ffffff; }
+  .article--descr {
+    padding: 0px !important;
+    background-color: #fff !important; }
   .article--date {
+    padding: 50px 0 !important;
     font-family: Arial !important;
     font-size: 11px !important;
     color: #767676 !important; }
   .article--title {
     font-family: "Springville" !important;
     font-size: 48px !important;
-    line-height: 48px !important; }
+    line-height: 48px !important;
+    letter-spacing: -1.8px !important;
+    word-spacing: 9px !important;
+    padding-bottom: 35px !important;
+    cursor: grab; }
+    .article--title:hover {
+      text-decoration: underline; }
+  .article--author {
+    font-family: "ACaslsonPro" !important;
+    font-size: 14px !important; }
   .article--articles {
     margin: 0 auto; }
+
+button:hover {
+  background-color: "transparent" !important; }
 
 .carousel-data {
   max-width: 1440px;
   width: 100vw;
-  height: 100%;
-  margin: 0 !important; }
+  height: 100%; }
   .carousel-data--img {
+    max-width: 1440px;
+    min-height: 480px;
     display: block;
+    width: 100%;
     height: 100% !important;
-    width: 100vw !important;
-    margin: 0 !important;
-    object-fit: fill !important; }
+    overflow: hidden;
+    object-fit: cover !important; }
   .carousel-data--label {
     font-size: 60px;
     top: 40% !important;
-    left: -36% !important;
+    left: -40% !important;
     background-color: transparent !important;
     max-width: 650px;
-    text-align: left !important; }
+    text-align: left !important;
+    font-family: "Springville" !important; }
   .carousel-data--headline {
     font-size: 60px;
     top: 50% !important;
-    left: -36% !important;
+    left: -40% !important;
     background-color: transparent !important;
     max-width: 650px;
-    text-align: left !important; }
+    text-align: left !important;
+    font-family: "Springville" !important; }
   .carousel-data--date {
     font-size: 30px;
     top: 58% !important;
-    left: -36% !important;
+    left: -40% !important;
     background-color: transparent !important;
     max-width: 650px;
-    text-align: left !important; }
+    text-align: left !important;
+    font-family: "ACasslonPro" !important; }
   .carousel-data--descr {
     font-size: 18px;
     top: 65% !important;
-    left: -36% !important;
+    left: -40% !important;
     background-color: transparent !important;
     max-width: 650px;
-    text-align: left !important; }
+    text-align: left !important;
+    font-family: "ACasslonPro" !important; }
 .carousel .rcs_slideCon {
   height: 100% !important; }
 .carousel .itemWrapper img {
   width: 100vw !important; }
 
+@media screen and (max-width: 1025px) {
+  .carousel-data {
+    max-width: 1025px; }
+    .carousel-data--img {
+      max-width: 1025px; }
+    .carousel-data--label, .carousel-data--headline {
+      font-size: 50px; }
+    .carousel-data--date {
+      font-size: 22px; }
+    .carousel-data--descr {
+      font-size: 15px; }
+    .carousel-data--label, .carousel-data--headline, .carousel-data--descr, .carousel-data--date {
+      left: -20% !important; } }
+@media screen and (max-width: 769px) {
+  .carousel-data--label, .carousel-data--headline, .carousel-data--descr, .carousel-data--date {
+    left: -20% !important; } }
+@media screen and (max-width: 575px) {
+  .carousel-data {
+    max-width: 575px; }
+    .carousel-data--img {
+      max-width: 575px; }
+    .carousel-data--label, .carousel-data--headline {
+      font-size: 30px; }
+    .carousel-data--label {
+      top: 45% !important; }
+    .carousel-data--headline {
+      top: 58% !important; }
+    .carousel-data--date {
+      font-size: 15px;
+      top: 72% !important; }
+    .carousel-data--descr {
+      font-size: 10px;
+      top: 80% !important;
+      word-wrap: wrap; }
+    .carousel-data--label, .carousel-data--headline, .carousel-data--descr, .carousel-data--date {
+      left: -20% !important; } }
 .header {
   display: flex;
   flex-direction: row;
@@ -141,7 +212,8 @@ table {
   padding: 50px 120px 40px; }
   .header--logo {
     max-width: 75vw;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .header--logo svg {
       max-width: 196px;
       max-height: 34px;
@@ -151,13 +223,15 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    height: auto; }
   .header .menu .menu--input {
     flex: 0 1 auto;
     margin-right: 20px;
     color: #767676;
     font-family: Arial;
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none; }
   .header .menu .menu--drpdwn {
     flex: 0 1 auto;
     max-width: 25vw;
@@ -165,9 +239,29 @@ table {
     .header .menu .menu--drpdwn svg {
       max-width: 55px;
       max-height: 13px;
-      width: 100%;
+      width: 100vw;
       height: 100%; }
       .header .menu .menu--drpdwn svg path {
         color: #000000; }
+
+/* mobile styles  */
+@media screen and (max-width: 575px) {
+  .header {
+    height: 50px;
+    padding: 0px;
+    width: 100%; }
+    .header--logo {
+      height: 20px;
+      width: 50%; }
+    .header .menu {
+      width: 50%; }
+      .header .menu .menu--input {
+        font-size: 10px;
+        margin-right: 10px; } }
+/* tablet header styles */
+@media screen and (max-width: 1025px) {
+  .header {
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=index.css.map */

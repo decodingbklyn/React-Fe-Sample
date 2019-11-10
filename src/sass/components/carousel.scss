@@ -1,58 +1,58 @@
 .carousel {
-
     &-data {
         max-width: 1440px;
         width: 100vw;
         height: 100%;
 
-        margin: 0 !important;
-
         &--img {
+            max-width: 1440px;
+            min-height: 480px;
             display: block;
+            width: 100%;
             height: 100% !important;
-            width: 100vw !important;
-            margin: 0 !important;
-            object-fit: fill !important;
+            overflow: hidden;
+            object-fit: cover !important;
         }
 
         &--label {
             font-size: 60px;
             top: 40% !important;
-            left: -36% !important;
+            left: -40% !important;
             background-color: transparent !important;
             max-width: 650px;
             text-align: left !important;
+            font-family: "Springville" !important;
         }
 
         &--headline {
             font-size: 60px;
             top: 50% !important;
-            left: -36% !important;
+            left: -40% !important;
             background-color: transparent !important;
             max-width: 650px;
             text-align: left !important;
-            //font-family: Springville
+            font-family: "Springville" !important;
     
         }
 
         &--date {
             font-size: 30px;
             top: 58% !important;
-            left: -36% !important;
+            left: -40% !important;
             background-color: transparent !important;
             max-width: 650px;
             text-align: left !important;
-            //font-family: ACasslonPro
+            font-family: "ACasslonPro" !important;
         } 
 
         &--descr {
             font-size: 18px;
             top: 65% !important;
-            left: -36% !important;
+            left: -40% !important;
             background-color: transparent !important;
             max-width: 650px;
             text-align: left !important;
-            //font-familey  ACasslonPro
+            font-family:  "ACasslonPro" !important;
         }
     }
   
@@ -62,5 +62,87 @@
     
     .itemWrapper img {
         width: 100vw !important;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .carousel {
+
+        &-data {
+            max-width: 1025px;
+
+            &--img {
+                max-width: 1025px;
+            }
+
+            &--label, &--headline {
+                font-size: 50px;
+            }
+
+            &--date { 
+                font-size: 22px;
+            }
+
+            &--descr {
+                font-size: 15px
+            }
+
+            &--label, &--headline, &--descr, &--date {
+                left: -20% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .carousel {
+
+        &-data {
+
+            &--label, &--headline, &--descr, &--date {
+                left: -20% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel {
+
+        &-data {
+            max-width: 575px;
+
+            &--img {
+                max-width: 575px;
+            }
+
+            &--label, &--headline {
+                font-size: 30px;
+            }
+
+            &--label {
+                top: 45% !important;
+            }
+
+            &--headline {
+                top: 58% !important;
+            }
+
+            &--date { 
+                font-size: 15px;
+                top: 72% !important;
+            }
+
+            &--descr {
+                font-size: 10px;
+                top: 80% !important;
+                word-wrap: wrap;
+            }
+
+            &--label, &--headline, &--descr, &--date {
+                left: -20% !important;
+            }
+        }
     }
 }

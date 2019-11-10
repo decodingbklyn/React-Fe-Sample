@@ -1,15 +1,19 @@
 .article {
     max-width: 350px;
-
-    &--img {
-
-    }
+    border-radius: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    padding-bottom: 50px !important;
+    border-bottom: solid 1px #DBDBDB !important;
+    background-color: #ffffff;
 
     &--descr{
-        
+        padding: 0px !important;
+        background-color: #fff !important;
+
     }
 
     &--date {
+        padding: 50px 0 !important;
         font-family: Arial !important;
         font-size: 11px !important;
         color: #767676 !important;
@@ -19,9 +23,28 @@
         font-family: "Springville" !important;
         font-size: 48px !important;
         line-height: 48px !important;
+        letter-spacing: -1.8px !important;
+        word-spacing: 9px !important;
+        padding-bottom: 35px !important;
+        cursor: grab;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &--author {
+        font-family: "ACaslsonPro" !important;
+        font-size: 14px !important;
     }
 
     &--articles {
         margin: 0 auto;
     }
 }
+
+button{
+    &:hover{
+      background-color: "transparent" !important;
+    }
+  }  

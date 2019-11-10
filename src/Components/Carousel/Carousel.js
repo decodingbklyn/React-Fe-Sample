@@ -1,6 +1,6 @@
 import React from 'react'
 import CarouselSlider from 'react-carousel-slider';
-import hero from '../../Utils/images/hero (2).png'
+import hero from '../../Utils/images/hero.png'
 
 
 function Carousel(){
@@ -28,36 +28,44 @@ function Carousel(){
 
     let manner = {
         autoSliding: {interval: "5s"},
-        duration: "2s"
+        duration: "1s"
     }
     
     let sliderBox = {
         maxHeight: '580px',
         maxWidth: '1440px',
-        width: '100vw',
-        height: '100vh', 
+        width: '100%',
+        height: '100%', 
         background: '#fff',
-        marginBottom: '50px'
+        marginBottom: '50px',
+        overflow: 'hidden',
+        scroll: 'hidden'
     }
 
     let itemStyle = {
-        minWidth: '100vw',
+        minWidth: '320px',
         height: '100%',
-        margin: '0 0px', 
-        padding: 0
+        margin: '0 5px', 
+        padding: 0,
     }
 
-    let accEle = {
-        button: false, 
-        dots: true
-    }
-
-    let dotsSetting = {
-        placeOn: 'bottom',
+    let buttonSetting = {
         style: {
-            dotSize: "5px",
-            currDotColor: "rgba(155, 108, 27, 0.5)",
-            marginBottom: "20px"
+            left: {
+                display: "none"
+            },
+            right: {
+                display: "none"
+            }
+        }
+            
+    }
+    let dotsSetting = {
+        placeOn: 'bottom-beneath',
+        style: {
+            dotSize: "10x",
+            marginBottom: "20px",
+            marginTop: "-50px"
         }
     }
 
@@ -68,7 +76,9 @@ function Carousel(){
         width: '100%',
         height: '100%',
         background: 'transparent',
+        overflow: 'hidden'
     }
+    
     let articleDes = data.map( (item , index) => 
         <div className="carousel-data">
             <img className="carousel-data--img" src = { item.imgSrc} alt= { item.headline } />
@@ -81,12 +91,12 @@ function Carousel(){
     
     return (
             <CarouselSlider slideCpnts = { articleDes }
-                            accEle = { accEle }
                             manner = { manner }
                             sliderBoxStyle = { sliderBox }
                             itemsStyle = { itemStyle }
                             dotsSetting = { dotsSetting }
                             textBoxStyle = { textBox }
+                            buttonSetting = { buttonSetting }
                             />
     )
 }
