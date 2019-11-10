@@ -1,9 +1,15 @@
 .article {
+    max-width: 350px;
+
     &--img {
 
     }
 
     &--descr{
         
+    }
+
+    &--articles {
+        margin: 0 auto;
     }
 }

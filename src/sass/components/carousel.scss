@@ -4,7 +4,7 @@
         max-width: 1440px;
         width: 100vw;
         height: 100%;
-        background-color: transparent;
+
         margin: 0 !important;
 
         &--img {
@@ -17,18 +17,31 @@
 
         &--headline {
             font-size: 60px;
-            top: 50%;
+            top: 50% !important;
+            left: -36% !important;
+            padding-right: 100px !important;
+            background-color: transparent !important;
+            max-width: 600px;
+            text-align: left !important;
             //font-family: Springville
     
         }
         &--date {
             font-size: 30px;
-            top: 55%;
+            top: 63% !important;
+            left: -36% !important;
+            background-color: transparent !important;
+            max-width: 600px;
+            text-align: left !important;
             //font-family: ACasslonPro
         } 
         &--descr {
             font-size: 18px;
-            top: 60%;
+            top: 70% !important;
+            left: -36% !important;
+            background-color: transparent !important;
+            max-width: 600px;
+            text-align: left !important;
             //font-familey  ACasslonPro
         }
     }
