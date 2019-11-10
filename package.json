@@ -65,11 +65,6 @@
     "webpack-manifest-plugin": "2.1.1",
     "workbox-webpack-plugin": "4.3.1"
   },
-  "buildpacks": [
-    {
-      "url": "mars/create-react-app"
-    }
-  ],
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
