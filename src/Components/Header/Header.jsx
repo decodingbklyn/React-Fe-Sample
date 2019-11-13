@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactComponent as Logo } from '../../Utils/images/logo.svg';
 import { ReactComponent as Menu } from '../../Utils/images/hamburger.svg';
+import { IconButton } from '@material-ui/core'
 
 function Header(){
 
@@ -13,7 +14,9 @@ function Header(){
                 <a className="menu--input" href="tel:2125555555">2125555555</a>
                 <p className="menu--input">Login</p>
                 <div className="menu--drpdwn">
-                    <Menu />
+                    <IconButton disabled>
+                        <Menu />
+                    </IconButton>
                 </div>
             </div>
 

@@ -21,7 +21,12 @@
   margin-bottom: 20px;
 }
 .app--footer > a {
+  pointer-events: none;
+  cursor: default;
   color: #000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 575px) {
@@ -294,6 +299,7 @@ table {
   flex: 0 1 auto;
   max-width: 25vw;
   width: 100%;
+  margin-left: -20px;
 }
 .header .menu .menu--drpdwn svg {
   max-width: 55px;
