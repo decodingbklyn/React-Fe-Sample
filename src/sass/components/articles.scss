@@ -28,17 +28,30 @@
         padding-bottom: 35px !important;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: underline !important;
             cursor: grab;
+        }
+
+        @media screen and (max-width: 769px) {
+            font-size: 35px !important;
         }
     }
 
     &--author {
         font-family: "ACaslsonPro" !important;
         font-size: 14px !important;
+
+        & > span {
+            text-decoration: underline;
+        }
     }
 
     &--articles {
         margin: 0 auto;
     }
+
+}
+
+.disabled:hover {
+    background: #fff !important;
 }

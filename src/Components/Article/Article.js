@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
 
 function Article(props){
-
     return(
             <Card className="article" disableRipple>
                 <CardActionArea className="article--img" disabled>
@@ -13,11 +12,11 @@ function Article(props){
                         component="img"
                     />
                 </CardActionArea>
-                <CardActionArea>
+                <CardActionArea  focusVisibleClassName="disabled" disabledRipple>
                     <CardContent className="article--descr">
                         <Typography className="article--date">{ props.date }</Typography>
                         <Typography className="article--title">{ props.title }</Typography>
-                        <Typography className="article--author">Presented by { props.author }</Typography>
+                        <Typography className="article--author">Presented by <span>{ props.author }</span></Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>

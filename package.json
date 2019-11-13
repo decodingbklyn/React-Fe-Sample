@@ -1,7 +1,7 @@
 {
   "name": "react-fe-sample",
   "version": "0.1.0",
-  "homepage": "https://vast-reef-10025.herokuapp.com/",
+  "homepage": "https://react-fe-sample.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
@@ -49,10 +49,10 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.11.0",
     "react-app-polyfill": "^1.0.4",
-    "react-carousel-slider": "^2.0.13",
     "react-dev-utils": "^9.1.0",
     "react-dom": "^16.11.0",
     "react-masonry-css": "^1.0.14",
+    "react-responsive-carousel": "^3.1.51",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",
     "sass-loader": "7.2.0",

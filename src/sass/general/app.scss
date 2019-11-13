@@ -14,7 +14,18 @@
 	
     &--jumbotron {
         position: relative;
-        padding-top: 120px;
+		padding: 120px 0px;
+	}
+
+	&--footer {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+		
+        & > a {
+
+            color: #000;
+        }
     }
 }
 
@@ -26,7 +37,7 @@
 	}
 }
 
-/* App Article Grids */
+/* override masonory grid react modules */
 .my-masonry-grid {
 	display: flex !important;
 	max-width: 1440px;

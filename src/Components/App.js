@@ -54,6 +54,7 @@ const data = [
       "height": "233"
   }
 ]
+
 function App() {
   const breakpointColumnsObj = {
     default: 3,
@@ -92,7 +93,7 @@ function App() {
         </Masonry>
       </main>
       <footer className="app--footer">
-          © 2017 — SPARTA PLAESENT - instagram - facebook - twitter
+          © 2017 — SPARTA PLAESENT - <a href="#">instagram</a> - <a href="#">facebook</a>- <a href="#">twitter</a>
       </footer>
     </div>
   );

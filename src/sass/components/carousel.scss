@@ -1,148 +1,109 @@
 .carousel {
-    &-data {
+    max-width: 1440px;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+
+    &--img {
         max-width: 1440px;
-        width: 100vw;
-        height: 100%;
+        min-height: 480px;
+        display: block;
+        width: 100%;
+        height: 100% !important;
+        overflow: hidden;
+        object-fit: cover !important;
+    }
 
-        &--img {
-            max-width: 1440px;
-            min-height: 480px;
-            display: block;
-            width: 100%;
-            height: 100% !important;
-            overflow: hidden;
-            object-fit: cover !important;
-        }
-
-        &--label {
-            font-size: 60px;
-            top: 40% !important;
-            left: -40% !important;
-            background-color: transparent !important;
-            max-width: 650px;
-            text-align: left !important;
-            font-family: "Springville" !important;
-        }
-
-        &--headline {
-            font-size: 60px;
-            top: 50% !important;
-            left: -40% !important;
-            background-color: transparent !important;
-            max-width: 650px;
-            text-align: left !important;
-            font-family: "Springville" !important;
+    &--details {
+        position: absolute;
+        top: 35%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(100vw / 12);
     
+        & > p {
+            background-color: transparent !important;
+        }
+    }
+
+    &--label, &--headline {
+        font-size: 60px;
+    }
+
+    &--date {
+        font-size: 30px;
+    } 
+
+    &--descr {
+        font-size: 18px;
+        margin-right: 40%;
+        text-align: left;
+    }
+
+    &--date, &--headline,  &--label {
+        margin-bottom: 10px;
+        background-color: transparent !important;
+        max-width: 650px;
+        text-align: left !important;
+        font-family: "ACasslonPro" !important;
+    }
+
+
+    @media screen and (max-width: 769px) {
+        &--label, &--headline {
+            font-size: 40px;
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        &--details {
+            margin: calc(100vw / 24);  
+        }
+
+        &--label, &--headline {
+            font-size: 28px;
         }
 
         &--date {
-            font-size: 30px;
-            top: 58% !important;
-            left: -40% !important;
-            background-color: transparent !important;
-            max-width: 650px;
-            text-align: left !important;
-            font-family: "ACasslonPro" !important;
-        } 
+            font-size: 14px;
+        }
 
         &--descr {
-            font-size: 18px;
-            top: 65% !important;
-            left: -40% !important;
-            background-color: transparent !important;
-            max-width: 650px;
-            text-align: left !important;
-            font-family:  "ACasslonPro" !important;
-        }
-    }
-  
-    .rcs_slideCon {
-        height: 100% !important;
-    }
-    
-    .itemWrapper img {
-        width: 100vw !important;
-    }
-}
-
-
-@media screen and (max-width: 1025px) {
-    .carousel {
-
-        &-data {
-            max-width: 1025px;
-
-            &--img {
-                max-width: 1025px;
-            }
-
-            &--label, &--headline {
-                font-size: 50px;
-            }
-
-            &--date { 
-                font-size: 22px;
-            }
-
-            &--descr {
-                font-size: 15px
-            }
-
-            &--label, &--headline, &--descr, &--date {
-                left: -20% !important;
-            }
+            font-size: 12px;;
         }
     }
 }
 
-@media screen and (max-width: 769px) {
-    .carousel {
 
-        &-data {
-
-            &--label, &--headline, &--descr, &--date {
-                left: -20% !important;
-            }
-        }
-    }
+/* react-responsive slider overvides*/
+.carousel .slide {
+    background-color: transparent !important;
+}
+.carousel .carousel-slider {
+    overflow: unset !important;
+}
+.slider .animated {
+    transition-duration: 5000ms !important;
+}
+.carousel .control-dots {
+    bottom: -30px !important;
+}
+.carousel .control-dots .dot {
+    box-shadow: 1px 1px 2px #e1e1e1!important;
+    background: #e1e1e1 !important;
+    width: 10px !important;
+    height: 10px !important;
+    z-index: 10 !important;
+    opacity: 0.502;
+    cursor: grab;
+}
+.carousel .control-dots .dot.selected, 
+.carousel .control-dots .dot:hover {
+    cursor: grab;
+    opacity: 1;
 }
 
-@media screen and (max-width: 575px) {
-    .carousel {
 
-        &-data {
-            max-width: 575px;
 
-            &--img {
-                max-width: 575px;
-            }
 
-            &--label, &--headline {
-                font-size: 30px;
-            }
-
-            &--label {
-                top: 45% !important;
-            }
-
-            &--headline {
-                top: 58% !important;
-            }
-
-            &--date { 
-                font-size: 15px;
-                top: 72% !important;
-            }
-
-            &--descr {
-                font-size: 10px;
-                top: 80% !important;
-                word-wrap: wrap;
-            }
-
-            &--label, &--headline, &--descr, &--date {
-                left: -20% !important;
-            }
-        }
-    }
-}
